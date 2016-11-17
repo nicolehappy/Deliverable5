@@ -1,8 +1,7 @@
 #Deliverable 5 -- Security Testing
+###Yue Li (yul134)
 
-Yue Li (yul134)
-
-Testing site: http://testphp.vulnweb.com
+###Testing site: http://testphp.vulnweb.com
 
 ###Vulnerability 1: Cross Site Scripting (Reflected) http://testphp.vulnweb.com/signup.php
 
@@ -16,7 +15,8 @@ Testing site: http://testphp.vulnweb.com
 		(4). Click "signup".
 		Then we can see signup process will be successful.
 	6. Steps to fix this vulnerability:
-Screenshots for this vulnerability:
+####Screenshots for this vulnerability:
+Message from OWASP ZAP: <img src = "1_3.png">
 
 1. signup page: <img src = "1_1.png">
 2. sigup successfully: <img src = "1_2.png">
@@ -35,7 +35,8 @@ Screenshots for this vulnerability:
 		(4) Click "login" button.
 		Then we can see login is successful and user's profile is shown.
 	6. Steps to fix this vulnerability:
-Screenshots for this vulnerability:
+####Screenshots for this vulnerability:
+Message from OWASP ZAP: <img src = "2_3.png">
 
 1. login page: <img src = "2_1.png">
 2. login successfully: <img src = "2_2.png">
@@ -52,4 +53,9 @@ Screenshots for this vulnerability:
 		(4) Click "signup".
 		Then the query will be executed and a message saying that the number of columns for the SELECT statement was incorrect.
 	6. Steps to fix this vulnerability: 
+####Screenshots for this vulnerability:
 
+Message from OWASP ZAP: <img src = "3_3.png">
+
+1. signup page: <img src = "3_1.png">
+2. error message: <img src = "3_2.png">
