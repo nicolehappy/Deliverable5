@@ -65,6 +65,10 @@ Message from OWASP ZAP: <img src = "2_3.png">
 		(4) Click "signup".
 		Then the query will be executed and a message saying that the number of columns for the SELECT statement was incorrect.
 	6. Steps to fix this vulnerability: 
+		According to the analysis form OWASP ZAP: The vulnerability was detected by manipulating the parameter with an SQL UNION clause to cause a database error message to be returned and recognized.
+		To help mitigate XXS attacks, we could: 
+		(1) Do not trust client side input, even if there is client side validation in place.  
+		(2) Minimize database access if possible and use parameterized queries
 ####Screenshots for this vulnerability:
 
 Message from OWASP ZAP: <img src = "3_3.png">
