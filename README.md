@@ -7,15 +7,15 @@ Testing site: http://testphp.vulnweb.com
 ###Vulnerability 1: Cross Site Scripting (Reflected) http://testphp.vulnweb.com/signup.php
 
 	1. This vulnerability attacks integrity, which means the data of this site could be modified by unauthorized users.
-	2. It is modification
+	2. It is modification attack
 	3. It is active
 	4. Due to this vulnerability, unauthorized access might occur.
-	5. steps to exploit this vulnerability:
+	5. Steps to exploit this vulnerability:
 		(1). Go to sign up page.
 		(2). Type "</li><script>alert(1);</script><li>" into username column.
 		(4). Click "signup".
 		Then we can see signup process will be successful.
-	6. steps to fix this vulnerability:
+	6. Steps to fix this vulnerability:
 Screenshots for this vulnerability:
 
 1. signup page: <img src = "1_1.png">
@@ -25,11 +25,20 @@ Screenshots for this vulnerability:
 ###Vulnerability 2: SQL Injection
 
 	1. This vulnerability attacks the confidentiality of the website, which means the data of this site could be modified by unauthorized users.
-	2. interruption attack or modification attack
-	3. active
+	2. It is interruption attack and modification attack
+	3. It is active
 	4. Business
-	5. steps: 
-	6. steps to fix this vulnerability:
+	5. Steps to exploit this vulnerability:
+		(1) Go to login page.
+		(2) Type "test" as username.
+		(3) Type "ZAP' OR '1'='1' -- " as password.
+		(4) Click "login" button.
+		(5) Login will be successful and user's profile will be shown.
+	6. Steps to fix this vulnerability:
+Screenshots for this vulnerability:
+
+1. login page: <img src = "2_1.png">
+2. login successfully: <img src = "2_2.png">
 
 ###Vulnerability 3: Password Autocomplete in Browser
 
