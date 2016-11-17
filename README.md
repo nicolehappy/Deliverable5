@@ -4,9 +4,9 @@ Yue Li (yul134)
 
 Testing site: http://testphp.vulnweb.com
 
-Vulnerability 1: Cross Site Scripting (Reflected) http://testphp.vulnweb.com/signup.php
+###Vulnerability 1: Cross Site Scripting (Reflected) http://testphp.vulnweb.com/signup.php
 
-	1. This vulnerability attacks integrity, which means the data of this site could be accessed by unauthorized users.
+	1. This vulnerability attacks integrity, which means the data of this site could be modified by unauthorized users.
 	2. It is modification
 	3. It is active
 	4. Due to this vulnerability, unauthorized access might occur.
@@ -16,8 +16,20 @@ Vulnerability 1: Cross Site Scripting (Reflected) http://testphp.vulnweb.com/sig
 		(4). Click "signup".
 		Then we can see signup process will be successful.
 	6. steps to fix this vulnerability:
-Screenshots fotr this vulnerability:
+Screenshots for this vulnerability:
 
 1. signup page: <img src = "1_1.png">
 2. sigup successfully: <img src = "1_2.png">
 	
+	
+###Vulnerability 2: SQL Injection
+
+	1. This vulnerability attacks the confidentiality of the website, which means the data of this site could be modified by unauthorized users.
+	2. interruption attack or modification attack
+	3. active
+	4. Business
+	5. steps: 
+	6. steps to fix this vulnerability:
+
+###Vulnerability 3: Password Autocomplete in Browser
+
