@@ -15,5 +15,5 @@ Vulnerability 1: Cross Site Scripting (Reflected) http://testphp.vulnweb.com/sig
 		(2). Type "</li><script>alert(1);</script><li>" into username column.
 		(4). Click "signup".
 		Then we can see signup process will be successful.
-		<img src = "1_1.png">
+<img src = "1_1.png">
 	6. steps to fix this vulnerability: 
