@@ -12,9 +12,15 @@
 	5. Steps to exploit this vulnerability:
 		(1). Go to sign up page.
 		(2). Type "</li><script>alert(1);</script><li>" into username column.
-		(4). Click "signup".
+		(3). Click "signup".
 		Then we can see signup process will be successful.
-	6. Steps to fix this vulnerability:
+	6. Steps to fix this vulnerability: 
+		According to the analysis form OWASP ZAP: When an attacker gets a user's browser to execute his/her code, the code will run within the security context of the hosting web site. 
+		To help mitigate XXS attacks, we could:
+	    (1) Set the session cookie to be HttpOnly
+	    (2) Use an "accept known good" input validation strategy
+	    (3) Ensure that you perform input validation at well-defined interfaces within the application.
+	
 ####Screenshots for this vulnerability:
 Message from OWASP ZAP: <img src = "1_3.png">
 
@@ -35,6 +41,12 @@ Message from OWASP ZAP: <img src = "1_3.png">
 		(4) Click "login" button.
 		Then we can see login is successful and user's profile is shown.
 	6. Steps to fix this vulnerability:
+		According to the analysis form OWASP ZAP: 
+		To help mitigate XXS attacks, we could:
+		(1) Do not trust client side input, even if there is client side validation in place.  
+		(2) Use PreparedStatement or CallableStatement, with parameters passed by '?'
+
+
 ####Screenshots for this vulnerability:
 Message from OWASP ZAP: <img src = "2_3.png">
 
